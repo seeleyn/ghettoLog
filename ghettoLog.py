@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-
+import sys;
 
 
 def ghettoLog(message):
@@ -10,4 +10,5 @@ def ghettoLog(message):
 
 
 print("Writing to ghetto log")
-ghettoLog("check 3")
+cmdLineArgsAsString = ";".join(sys.argv)
+ghettoLog("command line args are "+cmdLineArgsAsString)
